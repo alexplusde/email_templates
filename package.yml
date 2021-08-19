@@ -1,0 +1,25 @@
+# Natürlich, du kannst einfach Autor und Addon-Name ändern, 
+# schon ist es dein Add-On. Möchtest du nicht lieber 
+# stattdessen den Entwickler unterstützen?
+# https://alexplusde.github.io/qanda/
+package: email_templates
+version: '1.0.0-beta-1'
+author: 'Alexander Walther'
+supportpage: https://alexplusde.github.io/email_templates/
+load: late
+
+requires:
+    php:
+        version: '^7.3'
+    redaxo: ^5.10
+    packages:
+        yform: ^3.4
+
+pages:
+    yform/docs/email_templates:
+        title: E-Mail-Templates
+        subPath: README.md
+        icon: rex-icon fa-envelope-open-o
+        perm: email_templates[docs]
+
+default_config:
