@@ -1,5 +1,5 @@
 theme: jekyll-theme-minimal
-title: FAQ für REDAXO 5
-description: Fragen und Antworten für REDAXO 5 auf YForm-Basis 
-logo: https://raw.githubusercontent.com/alexplusde/qanda/master/docs/screenshot.png
+title: HTML-Templates für YForm (REDAXO 5)
+description: HTML-Templates für E-Mails auf YForm-Basis 
+logo: https://raw.githubusercontent.com/alexplusde/email_templates/master/docs/screenshot.png
 show_downloads: true
