@@ -10,10 +10,10 @@ load: late
 
 requires:
     php:
-        version: '^7.3'
+        version: '>=7.3'
     redaxo: ^5.10
     packages:
-        yform: ^3.4
+        yform: '>=3.4'
 
 pages:
     yform/docs/email_templates:
