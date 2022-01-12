@@ -27,12 +27,12 @@ Im REDAXO-Installer das Addon `email_templates` herunterladen und installieren. 
     $bg_color = "#EEEEEE" // Hintergrundfarbe der gesamten E-Mail
     $font_family = "Helvetica, Arial, sans-serif" // Standard-Schriftart
 
-    $preheader_text = "Newletter #6"; // Wird als Teaser E-Mail-Clients angezeigt
-    $header_url = "Newletter #6"; // Wird als Teaser E-Mail-Clients angezeigt
+    $preheader_text = "Newsletter #6"; // Wird als Teaser E-Mail-Clients angezeigt
+    $header_url = "Newsletter #6"; // Wird als Teaser E-Mail-Clients angezeigt
     $header_logo_src = "https://example.org/logo"; // Logo / Absender
 
     $imprint = "<p>Impressum</p>"; // E-Mail-Impressum / Signatur
-    $footer_links_ = ['Abmelden', 'https://example.org/unsubscribe'], ['Einstellungen', 'https://example.org/settings']; // Opt. Abmelde- oder Einstellungs-Link
+    $footer_links_ = ['Abmelden' => 'https://example.org/unsubscribe', 'Einstellungen' => 'https://example.org/settings']; // Opt. Abmelde- oder Einstellungs-Link
 
     /* Standard-Einstellungen für die E-Mail */
     $email
@@ -41,9 +41,9 @@ Im REDAXO-Installer das Addon `email_templates` herunterladen und installieren. 
 
     /* Beispiel: Einspaltiges Layout mit Bild, Text und Button hinzufügen */
     $email
-        ->addImage() // Bild-Element hinzufügen
-        ->addText() // Text-Element hinzufügen
-        ->addButton() // Button-Element hinzufügen
+        ->addImage("https://example.org/media/newsletter/image.ext") // Bild-Element hinzufügen
+        ->addText("Mein Text") // Text-Element hinzufügen
+        ->addButton("Weiterlesen...", "https://www.example.org") // Button-Element hinzufügen
         ->addToCol() // Inhalt muss einspaltig einer Spalte hinzugefügt werden
         ->addToRow();
 
@@ -82,6 +82,8 @@ Im REDAXO-Installer das Addon `email_templates` herunterladen und installieren. 
 
 #### Parameter für einen Button `addButton()`
 
+* `text`= `Weiterlesen....`
+* `url` = `https://www.example.org`
 * `size` =  `small`, `medium` oder `large`
 * `style` =  `flat`, `ghost`, `shadow`
 * `align` = `left`, `center`, `right` oder `full-width`
