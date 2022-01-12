@@ -29,10 +29,10 @@ Im REDAXO-Installer das Addon `email_templates` herunterladen und installieren. 
 
     $preheader_text = "Newsletter #6"; // Wird als Teaser E-Mail-Clients angezeigt
     $header_url = "Newsletter #6"; // Wird als Teaser E-Mail-Clients angezeigt
-    $header_logo_src = "https://example.org/logo"; // Logo / Absender
+    $header_logo_src = "https://www.example.org/media/logo.png"; // Logo / Absender
 
     $imprint = "<p>Impressum</p>"; // E-Mail-Impressum / Signatur
-    $footer_links_ = ['Abmelden' => 'https://example.org/unsubscribe', 'Einstellungen' => 'https://example.org/settings']; // Opt. Abmelde- oder Einstellungs-Link
+    $footer_links = ['Abmelden' => 'https://example.org/unsubscribe', 'Einstellungen' => 'https://example.org/settings']; // Opt. Abmelde- oder Einstellungs-Link
 
     /* Standard-Einstellungen für die E-Mail */
     $email
@@ -41,7 +41,7 @@ Im REDAXO-Installer das Addon `email_templates` herunterladen und installieren. 
 
     /* Beispiel: Einspaltiges Layout mit Bild, Text und Button hinzufügen */
     $email
-        ->addImage("https://example.org/media/newsletter/image.ext") // Bild-Element hinzufügen
+        ->addImage("https://www.example.org/media/newsletter/image.png") // Bild-Element hinzufügen
         ->addText("Mein Text") // Text-Element hinzufügen
         ->addButton("Weiterlesen...", "https://www.example.org") // Button-Element hinzufügen
         ->addToCol() // Inhalt muss einspaltig einer Spalte hinzugefügt werden
