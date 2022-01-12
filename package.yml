@@ -3,7 +3,7 @@
 # stattdessen den Entwickler unterstützen?
 # https://alexplusde.github.io/qanda/
 package: email_templates
-version: '1.0.0-beta-1'
+version: '1.0.0-dev'
 author: 'Alexander Walther'
 supportpage: https://alexplusde.github.io/email_templates/
 load: late
