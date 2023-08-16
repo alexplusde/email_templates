@@ -15,9 +15,9 @@ Mit diesem Addon werden aus einem E-Mail-Template-Generator vorgefertigte Bauste
 
 ## Installation
 
-Im REDAXO-Installer das Addon `email_templates` herunterladen und installieren. Anschließend erscheint ein neuer Menüpunkt `E-Mail-Templates`.
+Im REDAXO-Installer das Addon `email_templates` herunterladen und installieren. Anschließend Beispiel-Code in ein neues E-Mail-Template kopieren und anpassen.
 
-## Parameter
+## Beispiel-Code für ein YForm E-Mail-Template mit diesem Addon
 
 ```php
 
